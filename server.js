@@ -54,9 +54,9 @@ app.use(flash())
 
 // Create static public folder
 app.use(express.static('public'))
-app.use(express.static('public/css'))
-app.use(express.static('public/js'))
-app.use(express.static('public/assets'))
+// app.use(express.static('public/css'))
+// app.use(express.static('public/js'))
+// app.use(express.static('public/assets'))
 app.set('views', path.join(__dirname, 'views'));
 
 // Set hbs shablonizator

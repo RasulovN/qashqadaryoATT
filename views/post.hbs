@@ -15,7 +15,7 @@
       <h4 class="post-title">{{title}}</h4>
       {{!-- <p class="lead user-name"> Author: <a href="#">{{fullName}}</a> </p> --}}
       <div class="d-flex" style="justify-content: space-between;">
-        <p class="post-content">Published: {{createdAt}}</p>
+        <p class="post-content">Chop etilgan: {{createdAt}}</p>
         <p> <i class="fas fa-eye"></i><span>{{count}}</span> </p>
       </div>
       <div class="post-img">
@@ -26,8 +26,8 @@
         <hr>
         {{#if isLogged}}
             <form class="form-control mb" action="/post/delete?post={{slugUrl}}" method="POST">
-                <a href="/post/edit?post={{slugUrl}}" class="btn btn-secondary">Edit post</a>
-                <button type="submit" class="btn btn-danger">Delete post</button>
+                <a href="/post/edit?post={{slugUrl}}" class="btn btn-secondary">Postni tahrirlash</a>
+                <button type="submit" class="btn btn-danger">Postni o'chirish</button>
             </form>
             {{else}}
 
@@ -60,11 +60,11 @@
                 </div>
                     </div>
                         <div class="coment-model">
-                            Comments
+                            Izohlar
                              {{#each comments}}
                                 <ul id="comment-list">
                                     <b>Email: </b>  {{email}}  <br>
-                                    <b> Comment:  </b> {{content}}
+                                    <b> Izoh:  </b> {{content}}
                                 </ul>
                                {{/each}}
                         </div>
@@ -76,7 +76,7 @@
     <div class="col-md-4 scroller-card">
             <div class="card ">
                 <div class="card-header">
-                    <h5>Quote of the Day</h5>
+                    <h5>Kun iqtibos</h5>
                 </div>
                 <div class="card-body">
                     <p class="quote">
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="post-all-blogs">
-                <h2><a href="/blogs">ALL NEWS</a></h2>
+                <h2><a href="/blogs">Barcha yangiliklar</a></h2>
                 <div class="row">
                     {{!-- {{#if blogs}} --}}
                     <div class="col post-view-cards" style="overflow-y: scroll;">
@@ -102,7 +102,7 @@
                             <div class="col-md-4 post-all-child2">
                                 <div class="card-body">
                                     <h5 class="card-title">{{title}}</h5>
-                                    <p class="card-text"><small class="text-muted">Published: {{createdAt}}</small></p>
+                                    <p class="card-text"><small class="text-muted">Chop etilgan: {{createdAt}}</small></p>
                                 </div>
                             </div>
                         

@@ -1,104 +1,100 @@
 const quotes = [
   {
-    quote: `Don't worry if something doesn't work. If everything worked, you would be fired.`,
-    author: 'Mosher’s Law of Software Engineering'
+    quote: `Agar biror narsa ishlamasa, tashvishlanmang. Agar hamma narsa ishlayotgan bo'lsa, siz ishdan bo'shatilasiz.`,
+    author: "Mosherning dasturiy ta'minot muhandisligi qonuni"
   },
   {
-    quote: 'Programming today is a race of software developers striving to write programs with more and better idiot resistance, and a universe that is trying to create more selective idiots. As long as the universe wins.',
-    author: 'Rick Cook'
+    quote: '12 Soat ishlash kerak emas, samarali ishlash keark.',
+    author: 'Pavel Durov'
   },
   {
-    quote: 'Measuring a programmer is productivity by counting lines of code is like judging an airplane is build by its weight.',
+    quote: "Dasturchini kod satrlarini sanash orqali samaradorlikni o'lchash, samolyotni uning og'irligi bo'yicha qurilgan deb baholashga o'xshaydi.",
     author: 'Bill Gates'
   },
   {
-    quote: 'Most programs today are like Egyptian pyramids with a million bricks stacked on top of each other and without structural integrity—they are simply built by brute force and thousands of slaves.',
+    quote: "Bugungi kunda dasturlarning aksariyati bir-birining ustiga qo'yilgan millionlab g'ishtlardan iborat Misr piramidalariga o'xshaydi va strukturaviy yaxlitliksiz - ular shunchaki qo'pol kuch va minglab qullar tomonidan qurilgan.",
     author: 'Alan Kay'
   },
   {
-    quote: 'Most good programmers do their jobs not because they expect to be paid or recognized, but because they enjoy programming.',
+    quote: "Most good programmers do their jobs not because they expect to be paid or recognized, but because they enjoy programming.",
     author: 'Linus Torvalds'
   },
   {
-    quote: 'Programs must be written for the people who will read them, and the machines that will execute these programs are secondary.',
+    quote: "Dasturlar ularni o'qiydigan odamlar uchun yozilishi kerak va bu dasturlarni bajaradigan mashinalar ikkinchi darajali.",
     author: 'Harold Abelson'
   },
   {
-    quote: 'People who think they hate computers actually hate bad programmers.',
+    quote: "People who think they hate computers actually hate bad programmers.",
     author: 'Larry Niven'
   },
   {
-    quote: 'If you give a person a program, you will keep him busy for one day. If you teach a person to program, you will keep him busy for life.',
+    quote: "Agar biror kishiga dastur bersangiz, uni bir kun band qilasiz. Agar siz odamni dasturlashni o'rgatsangiz, uni bir umr band qilasiz.",
     author: 'Waseem Latif'
   },
   {
-    quote: `A language that doesn't change the way you think about programming is not worth learning.`,
+    quote: `Dasturlash haqidagi fikringizni o'zgartirmaydigan til o'rganishga arzimaydi.`,
     author: 'Alan J. Perlis'
   },
   {
-    quote: 'Sometimes the best programs are written on paper. Programming them is a secondary thing.',
+    quote: "Ba'zan eng yaxshi dasturlar qog'ozga yoziladi. Ularni dasturlash ikkinchi darajali narsadir.",
     author: 'Max Kanat-Alexander'
   },
   {
-    quote: 'Programming is about turning something big and impossible into something small and real.',
+    quote: "Dasturlash katta va imkonsiz narsani kichik va haqiqiy narsaga aylantirishdir.",
     author: 'Jazzwant'
   },
   {
-    quote: 'Programmers are not mathematicians, as much as we would like them to be.',
+    quote: 'Dasturchilar biz xohlaganchalik matematik emas.',
     author: 'Richard P. Gabriel'
   },
   {
-    quote: 'Programming is hard. The basic rules on which everything is built are very simple, but as the program develops, it itself begins to introduce its own rules and laws. Thus, the programmer builds a labyrinth in which he himself can get lost.',
+    quote: "Dasturlash qiyin. Hamma narsa qurilgan asosiy qoidalar juda oddiy, ammo dastur rivojlanib borgan sari o'zi o'z qoidalari va qonunlarini joriy qila boshlaydi. Shunday qilib, dasturchi o'zi adashib qolishi mumkin bo'lgan labirint quradi.",
     author: 'Marijn Haverbeke'
   },
   {
-    quote: 'Working? Do not touch.',
-    author: 'Любой программист'
-  },
-  {
-    quote: 'Java is C++ with all guns, knives and clubs removed.',
+    quote: "Java C++ bo'lib, barcha qurollar, pichoqlar va kaltaklar olib tashlangan.",
     author: 'James Gosling'
   },
-  {
-    quote: `The bad name of the method is akin to the election promises of politicians. It seems to be talking about something, but if you think about it, it’s not clear what it is.`,
-    author: 'C. MacConnell'
-  },
-  {
-    quote: `A program that doesn't work usually does less harm than a program that doesn't work well.`,
-    author: 'Dave Thomas'
-  },
-  {
-    quote: 'How much easier it would be to write programs if it were not for customers.',
-    author: 'R. S. Martin'
-  },
-  {
-    quote: 'Young professionals don’t know how to work, while experienced professionals know not to work.',
-    author: 'Alexander Golov'
-  },
-  {
-    quote: 'I think the art of programming is a little more complicated than other human skills. Programming makes you better in the same way that learning a foreign language, math, or reading books helps you develop.',
-    author: 'Jack Dorsey'
-  },
-  {
-    quote: 'Just as painting a picture is an art for the soul, so writing a program is an art for the mind.',
-    author: 'Volnik'
-  },
-  {
-    quote: 'Testing does not detect errors such as creating the wrong application.',
-    author: 'Steve McConnell'
-  },
-  {
-    quote: `Some people, while solving a problem, think: "Why don't I use regular expressions?". After that, they already have two problems ...`,
-    author: 'Jamie Zawinski'
-  },
-  {
-    quote: 'Small programs accidentally compile and run correctly the first time they try. But if this happens to any non-trivial program, then it is very, very suspicious.',
-    author: 'Bjarne Stroustrup'
-  },
-  {
-    quote: 'The main problem of programmers is that their mistakes cannot be predicted.',
-    author: 'Seymour Cray'
-  },
+  // {
+  //   quote: `Usulning yomon nomi siyosatchilarning saylovdagi va'dalariga o'xshaydi. Biror narsa haqida gapirayotganga o'xshaydi, lekin agar siz bu haqda o'ylab ko'rsangiz, bu nima ekanligi aniq emas.`,
+  //   author: 'C. MacConnell'
+  // }, 
+  // {
+  //   quote: `Ishlamaydigan dastur odatda yaxshi ishlamaydigan dasturga qaraganda kamroq zarar keltiradi.`,
+  //   author: 'Dave Thomas'
+  // },
+  // {
+  //   quote: 'How much easier it would be to write programs if it were not for customers.',
+  //   author: 'R. S. Martin'
+  // },
+  // {
+  //   quote: 'Young professionals don’t know how to work, while experienced professionals know not to work.',
+  //   author: 'Alexander Golov'
+  // },
+  // {
+  //   quote: 'I think the art of programming is a little more complicated than other human skills. Programming makes you better in the same way that learning a foreign language, math, or reading books helps you develop.',
+  //   author: 'Jack Dorsey'
+  // },
+  // {
+  //   quote: 'Just as painting a picture is an art for the soul, so writing a program is an art for the mind.',
+  //   author: 'Volnik'
+  // },
+  // {
+  //   quote: 'Testing does not detect errors such as creating the wrong application.',
+  //   author: 'Steve McConnell'
+  // },
+  // {
+  //   quote: `Some people, while solving a problem, think: "Why don't I use regular expressions?". After that, they already have two problems ...`,
+  //   author: 'Jamie Zawinski'
+  // },
+  // {
+  //   quote: 'Small programs accidentally compile and run correctly the first time they try. But if this happens to any non-trivial program, then it is very, very suspicious.',
+  //   author: 'Bjarne Stroustrup'
+  // },
+  // {
+  //   quote: 'The main problem of programmers is that their mistakes cannot be predicted.',
+  //   author: 'Seymour Cray'
+  // },
 ]
 
 function getRandomInt(min, max) {

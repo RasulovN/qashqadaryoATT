@@ -26,11 +26,11 @@ const aboutControl = (req, res) => {
     })
 }
 
-const bookController = (req, res) => {
-    res.render('pages/books', {
-        title: "Books Page"
-    })
-}
+// const bookController = (req, res) => {
+//     res.render('pages/books', {
+//         title: "Books Page"
+//     })
+// }
 
 const blogsController = async (req, res) => {
     try {
@@ -84,7 +84,7 @@ const blogsPostController = async (req, res) => {
 module.exports = {
     homeControl,
     aboutControl,
-    bookController,
+    // bookController,
     blogsController,
     blogsPostController
 }

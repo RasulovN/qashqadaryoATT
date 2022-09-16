@@ -30,13 +30,24 @@
     {{!-- Langs --}}
        {{!-- <script type="text/javascript" src="http://cdn.howcode.org/content/static/javascript/jquery.min.js"></script>
     <script src="http://cdn.howcode.org/content/static/javascript/jquery.cookie.js"></script>   --}}
-        
+    {{!-- kit icons --}}
+        <script src="https://kit.fontawesome.com/2614625b83.js" crossorigin="anonymous"></script>
+    {{!-- kit icons --}}
         <style type="text/css">
             .goog-te-banner-frame.skiptranslate{display:none!important;}
-            body{top:0px!important;}
-            </style>
+            body{
+                top:0px!important;
+                margin: 0;
+                padding: 0;
+            }
+            canvas{
+                z-index: -1;
+            }
+         </style>
+
              <script type="text/javascript">
             $.cookie('googtrans', '/uz/it');
+            
         </script>
 
         <script type="text/javascript">
@@ -54,15 +65,22 @@
 
 
     {{!-- <link href="/css/style.css" rel="stylesheet" /> --}}
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+
     </head>
-<body id="page-top" style="width: 100vw;">
-    {{{body}}}
+<body id="particles" style="width: 100vw;" >
+
+      <div class="divMain">
+        {{{body}}}
+      </div>
+     
+    
     <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -90,6 +108,7 @@
 <script src="js/about.js"></script>
 <script src="js/particles.js"></script>
 
+{{!-- Partiales canvas --}}
 
 
 

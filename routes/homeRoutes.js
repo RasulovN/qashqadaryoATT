@@ -11,16 +11,21 @@ const router = Router()
 const {
     homeControl,
     aboutControl,
-    bookController,
+    // bookController,
     blogsController,
     blogsPostController
 } = require('../controller/homeController')
 
 router.get('/', homeControl)
         .get('/about', aboutControl)
-        .get('/books', bookController)
+        // .get('/books', bookController)
         .get('/blogs', blogsController)
-        .get('/blogpost', blogsPostController);
+        .get('/blogpost', blogsPostController)
+        .get('/books', (req, res) => {
+            res.render('pages/books', {
+                title: "Books Page"
+            })
+        });
 
 
 module.exports = router
